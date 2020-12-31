@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include 'base/meta.html' %}
+    {% include 'base/css.html' %}
+    <title> {% block title %} {% endblock title %} - Fly High</title>
+  </head>
+  <body>
+      {% include 'base/navbar.html' %}
+      
+      {% block content %} {% endblock content %}
+          
+      {% include 'base/footer.html' %}
+      {% include 'base/js.html' %}
+  </body>
+</html>
